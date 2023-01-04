@@ -1,10 +1,13 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap);
+
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  background-color: #E1F4E5;
 }
 
 * {
@@ -45,6 +48,12 @@ input:focus, input:active {
 img {
   max-width: 100%;
   width: 100%;
+}
+.spaced {
+  max-width: 100%;
+  object-fit : cover;
+  object-position : center;
+
 }
 
 .p-t-0 {
@@ -96,6 +105,9 @@ header .my-nav {
   z-index: 999;
   padding: 10px 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(217deg, #0C4531, rgba(255,0,0,0) 80.71%),
+            linear-gradient(127deg, #FFCEAD, rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, #662900, rgba(0,0,255,0) 70.71%);;
 }
 header .my-nav .nav-items {
   display: flex;
@@ -166,6 +178,14 @@ header .my-nav .logo {
 header .my-nav .logo img {
   width: unset;
 }
+
+.third-slide {
+  color :#0C4531;
+  font-size: 12px;
+  font-weight: bold;
+  
+  
+}
 header .my-nav .menu-items {
   flex: 1 1 70%;
   max-width: 70%;
@@ -205,10 +225,11 @@ header .my-nav .menu-items .menu ul li {
   }
 }
 header .my-nav .menu-items .menu ul li a {
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  padding: 0px 20px;
+font-size: 16px;
+font-weight: 800;
+color: #EBFFEF;
+padding: 0px 20px;
+font-family: 'Bebas Neue', cursive;
 }
 @media screen and (max-width: 767.98px) {
   header .my-nav .menu-items .menu ul li a {
@@ -257,13 +278,15 @@ header .my-nav .menu-items .menu ul li a {
 
 main .slider {
   padding: 0;
+  height: 800px;
+
 }
 main .slider #carouselExampleIndicators .carousel-item .banner-content {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,7 +332,7 @@ main .slider #carouselExampleIndicators .carousel-item .banner-content ol li {
   display: inline-block;
   margin: 0.625rem 0.75rem;
   position: relative;
-  padding: 0.3125rem 0.8125rem;
+  padding: 0.3125rem 0.95rem;
   border: solid 0.0625rem #fff;
   position: relative;
   transition: all ease-in-out 0.5s;
@@ -318,11 +341,11 @@ main .slider #carouselExampleIndicators .carousel-item .banner-content ol li:hov
   background: #fff;
 }
 main .slider #carouselExampleIndicators .carousel-item .banner-content ol li:hover a {
-  color: #fd4a36;
+  color: #0C6E19;
 }
 main .slider #carouselExampleIndicators .carousel-item .banner-content ol li:hover:nth-child(1) {
-  background: #fd4a36;
-  border-color: #fd4a36;
+  background: #0C6E19;
+  border-color: #0C6E19;
 }
 main .slider #carouselExampleIndicators .carousel-item .banner-content ol li:hover:nth-child(1) a {
   color: #fff;
@@ -336,7 +359,10 @@ main .slider #carouselExampleIndicators .carousel-item .banner-content ol li:nth
   background: #fff;
 }
 main .slider #carouselExampleIndicators .carousel-item .banner-content ol li:nth-child(1) a {
-  color: #fd4a36;
+  color: #0C6E19;
+}
+.carousel-indicators {
+  top: 50%;
 }
 main .slider #carouselExampleIndicators .carousel-indicators li {
   text-indent: unset;
@@ -349,7 +375,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li {
   text-align: center;
 }
 main .slider #carouselExampleIndicators .carousel-indicators li.active {
-  background: #fd4a36;
+  background: #0C6E19;
 }
 main .slider #carouselExampleIndicators .carousel-indicators li.active::before {
   color: #fff;
@@ -359,7 +385,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::after {
 }
 main .slider #carouselExampleIndicators .carousel-indicators li::before {
   position: absolute;
-  color: #0c2957;
+  color: #8F3700;
   font-size: 0.75rem;
   font-weight: bold;
   content: counter(step-counter);
@@ -382,23 +408,28 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   transition: all ease-in 0.5s;
 }
 .bg-01 .heading span {
+  font-family: 'Bebas Neue', cursive;
   display: block;
   margin: 0 0 0.625rem 0;
-  color: #fd4a36;
-  font-size: 1rem;
+  color: #0C6E19;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.5px;
+  border-bottom: 1px solid #ADFFBE;
 }
 .bg-01 .heading h2 {
+  /* Replace Color 0C6E19 */
+  /* Dark Green 8F3700 0E811E */
+  /* Brown Shade 8F3700, 8F3700*/
   font-size: 1.5625rem;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 800;
   display: inline-block;
-  color: #0c2957;
+  color: #8F3700;
 }
 .bg-01 .heading p {
-  font-size: 0.8125rem;
+  font-size: 0.95rem;
   display: block;
   margin: 0.625rem 0;
   text-transform: capitalize;
@@ -420,7 +451,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 }
 .bg-01 .wrapper .icons i {
   font-size: 1.875rem;
-  color: #fd4a36;
+  color: #0C6E19;
 }
 .bg-01 .wrapper .content {
   display: inline-block;
@@ -428,13 +459,14 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   position: relative;
 }
 .bg-01 .wrapper .content h4 {
+  /* // Green Color 8F3700; */
   font-size: 1.125rem;
-  color: #0c2957;
+  color: #7A1F00;
   display: block;
   margin: 0 0 0.3125rem 0;
 }
 .bg-01 .wrapper .content p {
-  font-size: 0.8125rem;
+  font-size: 0.95rem;
   color: #666666;
   display: inline-block;
   line-height: 1.5625rem;
@@ -451,9 +483,14 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   background: #f5f4f0;
   z-index: 1;
 }
+
 .bg-02 .image {
   position: relative;
   z-index: 2;
+  border-radius: 10px;
+}
+.bg-02 img {
+  border-radius: 5px;
 }
 .bg-02 .heading {
   display: block;
@@ -468,21 +505,22 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 .bg-02 .heading span {
   display: block;
   margin: 0 0 0.625rem 0;
-  color: #fd4a36;
-  font-size: 1rem;
+  color: #00665F;
+  font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  font-family: 'Bebas Neue', cursive;
 }
 .bg-02 .heading h2 {
   font-size: 1.5625rem;
   text-transform: capitalize;
   font-weight: 600;
   display: inline-block;
-  color: #0c2957;
+  color: #8F3700;
 }
 .bg-02 .heading p {
-  font-size: 0.8125rem;
+  font-size:0.95rem;
   display: block;
   margin: 0.625rem 0;
   text-transform: capitalize;
@@ -510,20 +548,20 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   align-items: center;
   justify-content: center;
   font-size: 1.875rem;
-  color: #fd4a36;
+  color: #0C6E19;
   margin: 0 0 0.625rem 0;
   box-shadow: 0 2px 19px 8px rgba(225, 12, 12, 0.07), 0 1px 19px rgba(255, 20, 22, 0.1);
 }
 .bg-02 .wrapper .icon h4 {
   display: inline-block;
   font-size: 1.5625rem;
-  color: #fd4a36;
+  color: #0C6E19;
   font-weight: 600;
   margin: 0 0 0.625rem 0;
 }
 .bg-02 .wrapper .icon h5 {
   font-size: 1.125rem;
-  color: #0c2957;
+  color: #8F3700;
   display: block;
   text-transform: uppercase;
   font-weight: 600;
@@ -544,7 +582,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 .bg-03 .heading span {
   display: block;
   margin: 0 0 0.625rem 0;
-  color: #fd4a36;
+  color: #0C6E19;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -555,10 +593,10 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   text-transform: capitalize;
   font-weight: 600;
   display: inline-block;
-  color: #0c2957;
+  color: #8F3700;
 }
 .bg-03 .heading p {
-  font-size: 0.8125rem;
+  font-size: 0.95rem;
   display: block;
   margin: 0.625rem 0;
   text-transform: capitalize;
@@ -569,7 +607,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   margin: 1.25rem 0;
   position: relative;
   background: #fff;
-  border-top: 0.3125rem solid #fd4a36;
+  border-top: 0.3125rem solid #0C6E19;
   padding: 0.625rem 1.25rem 1.5625rem 1.25rem;
   box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.03), 0 1px 4px rgba(0, 0, 0, 0.04);
 }
@@ -583,14 +621,14 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 .bg-03 .wrapper .content i {
   display: block;
   margin: 0 0 0.3125rem 0;
-  color: #fd4a36;
+  color: #0C6E19;
 }
 .bg-03 .wrapper .content i::before {
   font-size: 3.75rem;
 }
 .bg-03 .wrapper .content h4 {
   font-size: 1.125rem;
-  color: #0c2957;
+  color: #8F3700;
   text-transform: capitalize;
   display: inline-block;
   margin: 0 0 0.3125rem 0;
@@ -602,7 +640,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #fd4a36;
+  background: #0C6E19;
   height: 0.1875rem;
   width: 100%;
   z-index: 1;
@@ -637,7 +675,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 .bg-04 .heading span {
   display: block;
   margin: 0 0 0.625rem 0;
-  color: #fd4a36;
+  color: #0C6E19;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -648,10 +686,10 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   text-transform: capitalize;
   font-weight: 600;
   display: inline-block;
-  color: #0c2957;
+  color: #8F3700;
 }
 .bg-04 .heading p {
-  font-size: 0.8125rem;
+  font-size: 0.95rem;
   display: block;
   margin: 0.625rem 0;
   text-transform: capitalize;
@@ -675,14 +713,14 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 }
 .bg-04 .wrapper .head-content h4 {
   font-size: 1.125rem;
-  color: #0c2957;
+  color: #8F3700;
   text-transform: capitalize;
   font-weight: 600;
 }
 .bg-04 .wrapper .head-content h5 {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #fd4a36;
+  color: #0C6E19;
 }
 .bg-04 .wrapper .head-content h5 span {
   font-size: 1rem;
@@ -734,14 +772,14 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   z-index: 1;
 }
 .bg-04 .wrapper .inner-content .list-content .active-plan {
-  background: #fd4a36;
+  background: #0C6E19;
 }
 .bg-04 .wrapper .inner-content .list-content .active-plan::before, .bg-04 .wrapper .inner-content .list-content .active-plan::after {
-  background: #fd4a36;
+  background: #0C6E19;
 }
 .bg-04 .wrapper .inner-content h6 {
   font-size: 0.9375rem;
-  color: #0c2957;
+  color: #8F3700;
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
@@ -749,10 +787,10 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   margin: 1.25rem 0 0.625rem 0;
 }
 .bg-04 .wrapper .inner-content ol .se-color {
-  color: #0c2957;
+  color: #8F3700;
 }
 .bg-04 .wrapper .inner-content ol .se-color i {
-  color: #fd4a36;
+  color: #0C6E19;
 }
 .bg-04 .wrapper .inner-content ol li {
   display: flex;
@@ -776,27 +814,27 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   border-radius: 1.25rem;
   background-color: #fff;
   padding: 0.3125rem 1.25rem;
-  color: #0c2957;
+  color: #8F3700;
   font-weight: 600;
   display: block;
   width: fit-content;
 }
 .bg-04 .wrapper .inner-content .active-a {
-  background: #fd4a36;
+  background: #0C6E19;
   color: #fff;
 }
 .bg-04 .wrapper .inner-content p {
   display: flex;
   justify-content: center;
   font-size: 0.9375rem;
-  color: #0c2957;
+  color: #8F3700;
   text-transform: capitalize;
   margin: 0.9375rem 0 0 0;
   font-weight: 600;
 }
 
 .textimonial-client {
-  background-image: url(../images/abt-img/bg.jpg);
+  background-image: url(../images/abt-img/bg_killing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -826,7 +864,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   margin: 0.625rem 0;
 }
 .textimonial-client .heading h2 span {
-  color: #fd4a36;
+  color: #0C6E19;
   margin-right: 0.3125rem;
   position: relative;
   padding-bottom: 0.3125rem;
@@ -883,7 +921,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #fd4a36;
+  background: #0C6E19;
   border-radius: 3.125rem;
 }
 .textimonial-client .wrapper .content a img {
@@ -901,7 +939,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   border-radius: 3.125rem;
 }
 .textimonial-client .carousel-indicators .active {
-  background-color: #fd4a36;
+  background-color: #0C6E19;
 }
 
 .bg-05 {
@@ -922,7 +960,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 .bg-05 .heading span {
   display: block;
   margin: 0 0 0.625rem 0;
-  color: #fd4a36;
+  color: #0C6E19;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -933,10 +971,10 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   text-transform: capitalize;
   font-weight: 600;
   display: inline-block;
-  color: #0c2957;
+  color: #8F3700;
 }
 .bg-05 .heading p {
-  font-size: 0.8125rem;
+  font-size: 0.95rem;
   display: block;
   margin: 0.625rem 0;
   text-transform: capitalize;
@@ -956,7 +994,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 }
 .bg-05 .team-wrapper .team-content h3 {
   font-size: 1.25rem;
-  color: #0c2957;
+  color: #8F3700;
   font-weight: normal;
 }
 .bg-05 .team-wrapper .team-content p {
@@ -981,7 +1019,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   vertical-align: middle;
   text-align: center;
   font-size: 0.75rem;
-  color: #fd4a36;
+  color: #0C6E19;
   transition: all 0.3s;
   -webkit-transition: all 0.4s;
   z-index: 2;
@@ -1005,10 +1043,18 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   transform: scale(0.6);
   border-radius: 50%;
   z-index: -1;
-  background: #fd4a36;
+  background: #0C6E19;
   opacity: 0;
   visibility: hidden;
   transition: 0.4s ease-in-out;
+}
+.bg-05 .team-wrapper img {
+max-height: 310px;
+overflow : hidden;
+}
+footer .wrapper .logo {
+max-width: 164px;
+max-height: 172px;
 }
 
 .bg-06 {
@@ -1029,7 +1075,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 .bg-06 .heading span {
   display: block;
   margin: 0 0 0.625rem 0;
-  color: #fd4a36;
+  color: #0C6E19;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -1040,10 +1086,10 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   text-transform: capitalize;
   font-weight: 600;
   display: inline-block;
-  color: #0c2957;
+  color: #8F3700;
 }
 .bg-06 .heading p {
-  font-size: 0.8125rem;
+  font-size: 0.95rem;
   display: block;
   margin: 0.625rem 0;
   text-transform: capitalize;
@@ -1053,6 +1099,10 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   position: relative;
   margin: 20px 0px;
   padding: 20px 0px;
+}
+.bg-06 img {
+  max-height : 480px;
+  overflow : hidden;
 }
 .bg-06 .blog-sub .blog-content {
   border-top-right-radius: 6px;
@@ -1072,7 +1122,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 .bg-06 .blog-sub .blog-content-section .blo-content-title h4 {
   font-size: 20px;
   font-weight: 600;
-  color: #0c2957;
+  color: #8F3700;
   padding: 3px 0px;
 }
 .bg-06 .blog-sub .blog-content-section .blo-content-title p {
@@ -1085,7 +1135,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 }
 .bg-06 .blog-sub .blog-content-section .blog-admin ol li {
   display: inline-block;
-  color: #fd4a36;
+  color: #0C6E19;
   font-size: 15px;
   margin: 0 5px 0 0;
 }
@@ -1094,8 +1144,8 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 }
 
 .abt-01 {
-  padding: 3.125rem 0;
-  background: url(../images/abt-img/abt-img.jpg);
+  padding: 4.125rem 0;
+  background: url(../images/abt-img/about_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1108,8 +1158,8 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   content: "";
   width: 100%;
   height: 100%;
-  background: #fd4a36;
-  opacity: 0.6;
+  background: #0C6E19;
+  opacity: 0.4;
   left: 0;
   top: 0;
   z-index: -1;
@@ -1119,11 +1169,12 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   text-align: center;
 }
 .abt-01 .seting h3 {
-  font-size: 20px;
-  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  color: #FEF5EF;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   margin: 10px 0px;
 }
 .abt-01 .seting ol li {
@@ -1154,7 +1205,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 .bg-001 .heading span {
   display: block;
   margin: 0 0 0.625rem 0;
-  color: #fd4a36;
+  color: #0C6E19;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -1165,10 +1216,10 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   text-transform: capitalize;
   font-weight: 600;
   display: inline-block;
-  color: #0c2957;
+  color: #8F3700;
 }
 .bg-001 .heading p {
-  font-size: 0.8125rem;
+  font-size: 0.95rem;
   display: block;
   margin: 0.625rem 0;
   text-transform: capitalize;
@@ -1192,7 +1243,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   height: 150px !important;
 }
 .bg-001 .contact-box .my-form .form-group .link a {
-  background: #fd4a36;
+  background: #0C6E19;
   display: inline-block;
   padding: 8px 26px;
   color: #fff;
@@ -1217,7 +1268,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   display: block;
   text-transform: capitalize;
   font-size: 15px;
-  color: #0c2957;
+  color: #8F3700;
   line-height: 27px;
   margin: 20px 0px;
   position: relative;
@@ -1242,7 +1293,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   top: 5px;
   height: 40px;
   width: 40px;
-  background: #fd4a36;
+  background: #0C6E19;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1356,11 +1407,11 @@ footer .wrapper .content ol li {
   color: #C5CDD9;
 }
 .end-footer .copy-right ol li {
-  font-size: 0.8125rem;
+  font-size: 0.95rem;
 }
 .end-footer .copy-right ol li a {
   font-weight: bold;
-  color: #fd4a36;
+  color: #0C6E19;
   margin-left: 0.625rem;
 }
 
