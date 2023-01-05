@@ -503,13 +503,13 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   text-align: left;
 }
 .bg-02 .heading span {
+  font-size : 5rem;
   display: block;
   margin: 0 0 0.625rem 0;
   color: #00665F;
-  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0.7px;
+  letter-spacing: 1rem;
   font-family: 'Bebas Neue', cursive;
 }
 .bg-02 .heading h2 {
@@ -967,11 +967,13 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   letter-spacing: 0.5px;
 }
 .bg-05 .heading h2 {
-  font-size: 1.5625rem;
+  font-size: 2rem;
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 700;
   display: inline-block;
   color: #8F3700;
+  font-family: 'Bebas Neue', cursive;
+
 }
 .bg-05 .heading p {
   font-size: 0.95rem;
@@ -979,6 +981,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   margin: 0.625rem 0;
   text-transform: capitalize;
   color: #666666;
+
 }
 .bg-05 .team-wrapper {
   position: relative;
