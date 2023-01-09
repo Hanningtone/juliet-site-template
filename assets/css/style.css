@@ -100,13 +100,14 @@ header .sub-01 {
   position: relative !important;
 }
 header .my-nav {
-  position: absolute;
+  display : inline-block;
+  position: relative;
   width: 100%;
   z-index: 999;
   padding: 10px 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   background: linear-gradient(217deg, #0C4531, rgba(255,0,0,0) 80.71%),
-            linear-gradient(127deg, #FFCEAD, rgba(0,255,0,0) 70.71%),
+            linear-gradient(127deg, #fff, rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, #662900, rgba(0,0,255,0) 70.71%);;
 }
 header .my-nav .nav-items {
@@ -177,6 +178,8 @@ header .my-nav .logo {
 }
 header .my-nav .logo img {
   width: unset;
+  padding : 0px 0px;
+ 
 }
 
 .third-slide {
@@ -225,12 +228,50 @@ header .my-nav .menu-items .menu ul li {
   }
 }
 header .my-nav .menu-items .menu ul li a {
-font-size: 16px;
+font-size: 20px;
 font-weight: 800;
 color: #EBFFEF;
 padding: 0px 20px;
 font-family: 'Bebas Neue', cursive;
 }
+header .my-nav .menu-items .menu ul .getinvolved {
+  color: #F8B6A0;
+  background : #1FFFA2;
+  border-radius : 10px;
+  opacity : 70%;
+  border: 1px solid #efefef;
+}
+header .my-nav .menu-items .menu ul .getinvolved ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+header .my-nav .menu-items .menu ul .getinvolved ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+header .my-nav .menu-items .menu ul .getinvolved:hover > ul, .getinvolved ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+
+
+header .my-nav .menu-items .menu ul .getinvolved a{
+  color: #104212;
+}
+
 @media screen and (max-width: 767.98px) {
   header .my-nav .menu-items .menu ul li a {
     padding: 10px;
