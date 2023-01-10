@@ -106,9 +106,9 @@ header .my-nav {
   z-index: 999;
   padding: 10px 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(217deg, #0C4531, rgba(255,0,0,0) 80.71%),
-            linear-gradient(127deg, #fff, rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, #662900, rgba(0,0,255,0) 70.71%);;
+  background: linear-gradient(217deg, #0C4531, rgba(200,0,0,0) 60.71%),
+            linear-gradient(127deg, #fff, rgba(0,255,0,0) 60.71%),
+            linear-gradient(336deg, #662900, rgba(167, 64, 5, 0) 100.71%);;
 }
 header .my-nav .nav-items {
   display: flex;
@@ -194,7 +194,7 @@ header .my-nav .menu-items {
   max-width: 70%;
   width: 70%;
   position: relative;
-  display: flex;
+  display: block;
   align-items: center;
 }
 @media screen and (max-width: 767.98px) {
@@ -220,6 +220,10 @@ header .my-nav .menu-items .menu {
 header .my-nav .menu-items .menu ul li {
   display: inline-block;
   padding: 0px 10px;
+  position : relative;
+}
+header .my-nav .menu-items .menu ul a:hover{
+  color: #dedede;
 }
 @media screen and (max-width: 767.98px) {
   header .my-nav .menu-items .menu ul li {
@@ -236,10 +240,10 @@ font-family: 'Bebas Neue', cursive;
 }
 header .my-nav .menu-items .menu ul .getinvolved {
   color: #F8B6A0;
-  background : #1FFFA2;
+  background : rgba(255, 255, 255, 0.8);
   border-radius : 10px;
-  opacity : 70%;
-  border: 1px solid #efefef;
+  opacity : 90%;
+  border: 0.5px solid #efefef;
 }
 header .my-nav .menu-items .menu ul .getinvolved ul {
   visibility: hidden;
@@ -264,13 +268,24 @@ header .my-nav .menu-items .menu ul .getinvolved:hover > ul, .getinvolved ul:hov
   visibility: visible;
   opacity: 1;
   display: block;
+  text-align: left;
 }
 
 
 
 header .my-nav .menu-items .menu ul .getinvolved a{
-  color: #104212;
+  color: #CC4E00;
+  padding-left: 10px;
+  border-left: 2px solid #3ca0e7;
+  transition: all 0.3s ease;
 }
+
+header .my-nav .menu-items .menu ul .getinvolved a:hover{
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+
 
 @media screen and (max-width: 767.98px) {
   header .my-nav .menu-items .menu ul li a {
