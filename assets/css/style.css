@@ -363,6 +363,21 @@ main .slider #carouselExampleIndicators .carousel-item .banner-content h1 {
   position: relative;
   margin: 0 0 0.625rem 0;
 }
+main .slider #carouselExampleIndicators .carousel-item .banner-content .first-slide{
+  /* color: #06231A; */
+  color: #14330A;
+  font-size : 2.5rem;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing : 5px;
+}
+.first-slide span{
+  font-size : 3rem;
+  color: #D6F5CC;
+}
+.first-slide .dark-bag-txt {
+  color : #fff;
+  display: initial;
+}
 main .slider #carouselExampleIndicators .carousel-item .banner-content h1::after {
   position: absolute;
   content: "";
