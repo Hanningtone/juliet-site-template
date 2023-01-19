@@ -498,11 +498,19 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
 .bg-01 .heading {
   display: block;
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin: 1.25rem 0;
   position: relative;
   z-index: 2;
   transition: all ease-in 0.5s;
+}
+.bg-01 .heading .our-goal{
+
+}
+.bg-01 .heading .our-goal p{
+  font-size : 1.5rem;
+  letter-spacing : 3px;
+  color : #524B3D;
 }
 .bg-01 .heading span {
   font-family: 'Bebas Neue', cursive;
@@ -514,6 +522,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   font-weight: 500;
   letter-spacing: 0.5px;
   border-bottom: 1px solid #ADFFBE;
+  text-align : center;
 }
 .bg-01 .heading h2 {
   /* Replace Color 0C6E19 */
@@ -526,11 +535,17 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   color: #8F3700;
 }
 .bg-01 .heading p {
-  font-size: 0.95rem;
+  padding-top: 10px;
+  font-size: 1.2rem;
   display: block;
   margin: 0.625rem 0;
-  text-transform: capitalize;
-  color: #666666;
+  text-transform: none;
+  color: #000000;
+}
+.bg-01 p.h1{
+  font-size: 2rem;
+  display:initial;
+
 }
 .bg-01 .wrapper {
   margin: 1.25rem 0;
@@ -568,6 +583,27 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   display: inline-block;
   line-height: 1.5625rem;
   margin: 0.3125rem 0;
+}
+.bg-01 .heading .icon{
+  display: flex;
+  flex-direction: column;
+  margin: 0.9375rem 0;
+  position: relative;
+  align-items: center;
+}
+.bg-01 .heading .icon i {
+  display: block;
+  height: 3.75rem;
+  width: 3.75rem;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.875rem;
+  color: #0C6E19;
+  margin: 0 0 0.625rem 0;
+  box-shadow: 0 2px 19px 8px rgba(225, 12, 12, 0.07), 0 1px 19px rgba(255, 20, 22, 0.1);
 }
 
 .bg-02::before {
@@ -609,6 +645,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   letter-spacing: 2px;
   font-family: 'Bebas Neue', cursive;
 }
+
 .bg-02 .heading h2 {
   font-size: 1.5625rem;
   text-transform: capitalize;
@@ -617,7 +654,7 @@ main .slider #carouselExampleIndicators .carousel-indicators li::before {
   color: #8F3700;
 }
 .bg-02 .heading p {
-  font-size:0.95rem;
+  font-size: 1.1rem;
   display: block;
   margin: 0.625rem 0;
   text-transform: capitalize;
